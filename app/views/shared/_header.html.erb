@@ -1,0 +1,42 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-brand bottom"><%= link_to 'DR CHARLES ARA', root_path %></div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav nav-pills navbar-nav navbar-right">
+                <li>
+                    <%= link_to 'BLOG', posts_path %>
+                </li>
+                <li>
+                    <%= link_to 'ABOUT', about_path %>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to 'COUNCELING', counceling_path %></li>
+                    <li><%= link_to 'WEDDINGS', weddings_path %></li>
+                    <li><%= link_to 'SEMINARS', seminars_path %></li>
+                    <li role="separator" class="divider"></li>
+                    <li><%= link_to 'BUY BOOK!', book_path %></a></li>
+                  </ul>
+                </li>
+
+                <li>
+                    <%= link_to 'CONTACT', new_contact_path %>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>

@@ -15,10 +15,6 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "home";
-@import "posts";
-
-
 
 body,
 html {
