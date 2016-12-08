@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   devise_for :users  
-  resources :users, only: [:show] 
+  resources :posts  
+  resources :contacts, only: [:new, :create]
 
   get 'welcome/index'
   get '/seminars', to: 'welcome#seminars'
@@ -10,9 +11,7 @@ Rails.application.routes.draw do
   get '/book', to: 'welcome#book'
   get '/about', to: 'welcome#about'
 
-  resources :posts
-
-  resources :contacts, only: [:new, :create]
-
  root 'welcome#index'
+
+ get '*path' => redirect('/')
 end
