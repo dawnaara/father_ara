@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
-gem 'sqlite3'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
@@ -22,6 +21,7 @@ gem 'aws-sdk', '~> 2.6', '>= 2.6.34'
 #changes: You must set the `s3_region`, If you are explicitly setting permissions anywhere, such as in an initializer,note that the format of the permissions changed from using an underscore to using a hyphen. For example, `:public_read` needs to be changed to`public-read`. For a walkthrough of upgrading from 4 to 5 and aws-sdk >= 2.0 you can watch http://rubythursday.com/episodes/ruby-snack-27-upgrade-paperclip-and-aws-sdk-in-prep-for-rails-5
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'factory_girl', '~> 4.7'	
   gem 'byebug', platform: :mri
 end
