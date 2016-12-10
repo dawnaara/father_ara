@@ -5,7 +5,7 @@ class WelcomeController < ApplicationController
   def about
   end
 
-  def counceling
+  def counseling
   end
 
   def weddings

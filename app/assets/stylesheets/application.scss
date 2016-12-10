@@ -16,25 +16,29 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 body,
 html {
     width: 100%;
     height: 100%;
 }
 
-body,
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Slabo 27px', serif;
 }
 
 .topnav {
     font-size: 14px; 
+    font-family: 'Slabo 27px', serif;
 }
 
 .lead {
@@ -52,16 +56,17 @@ h6 {
     background-size: cover;
 }
 
-/*
-.intro-header-overlay {
-	background-color: rgba(0,0,0,.35);
+
+#intro-header-overlay {
+	background-color: rgba(0,0,0,.50);
 	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;        
 }
-*/
+
 
 .intro-message {
     position: relative;
@@ -198,3 +203,5 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+@import "posts"

@@ -1,10 +1,23 @@
-<h1 id="page-title">Do you have a question or comment? Please send me a message.</h1>
-<%= simple_form_for @contacts do |f| %>
-	<%= f.input :name, placeholder: "Type your name here", required: true %>
-  	<%= f.input :email, placeholder: "Type your email here", required: true %>
-  	<%= f.input :message, placeholder: "Type your message here", as: :text, required: true %>
-  	<div class="hidden">
-  		<%= f.input :nickname, hint: 'leave this field blank' %>
-  	</div>
-  	<%= f.button :submit, 'Send Message' %>
-<% end %>
+<!-- Page Content -->
+<div class="container">
+
+  <!-- Page Heading -->
+  <div class="row">
+      <div class="col-lg-12">
+          <h1 class="page-header">Do you have a question or comment?
+              <small>Please send me a message.</small>
+          </h1>
+      </div>
+  </div>
+  <!-- /.row -->
+
+	<%= simple_form_for @contacts do |f| %>
+		<%= f.input :name, placeholder: "Type your name here", required: true %>
+	  	<%= f.input :email, placeholder: "Type your email here", required: true %>
+	  	<%= f.input :message, placeholder: "Type your message here", as: :text, required: true %>
+	  	<div class="hidden">
+	  		<%= f.input :nickname, hint: 'leave this field blank' %>
+	  	</div>
+	  	<%= f.button :submit, 'Send Message' %>
+	<% end %>
+</div>
