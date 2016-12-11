@@ -10,6 +10,7 @@
       </div>
   </div>
   <!-- /.row -->
+  <div class="row content-wrapper lead">
 
 	<%= simple_form_for @contacts do |f| %>
 		<%= f.input :name, placeholder: "Type your name here", required: true %>
@@ -20,4 +21,5 @@
 	  	</div>
 	  	<%= f.button :submit, 'Send Message' %>
 	<% end %>
+	</div>
 </div>
