@@ -8,50 +8,51 @@
   <div class="row">
       <div class="col-lg-12">
           <h1 class="page-header">Charlie's Thoughts
-              <small>Words of wisdom</small>
+              <small>a.k.a words of wisdom</small>
           </h1>
       </div>
   </div>
   <!-- /.row -->
 
+  <div class="container">
     <div class="row">
       <% @posts.each do |post| %>
 
           <!-- Blog Entries Column -->
-        <div class="col-md-4">
-          <%= image_tag post.image.url(:medium) %>
+        <div class="col-md-5">
+            <div class="img-responsive"><%= link_to (image_tag post.image.url(:medium)), post %>
+            </div>
         </div>
 
-          <!-- First Blog Post -->
-          <div class="col-md-8">
-            <h2 class="title"><%= link_to post.title, post %></h2>
-            <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
-          
-            <p class="lead"><%=h truncate(post.body, :length => 220, :separator => ' ') %></p>
-
-            <p><%= link_to 'Read More', post %><span class="glyphicon glyphicon-chevron-right"></span></p>
-          
-
-          </div>
+        <!-- First Blog Post -->
+        <div class="col-md-7">        
+          <h2 class="title"><%= link_to post.title, post %></h2>
+          <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>       
+          <p class="lead"><%=h truncate(post.body, :length => 250, :separator => ' ') %></p>
+          <p><%= link_to 'Read More', post %></p>
         </div>
+    </div>
         <hr>
       <% end %>
-    </div>
+  </div>
     
     <hr>
-
-    <!-- Pager -->
-    <ul class="pager">
-        <li class="previous">
-            <a href="#">&larr; Older</a>
-        </li>
-        <li class="next">
-            <a href="#">Newer &rarr;</a>
-        </li>
-    </ul>
+    
+    <div class="row">
+      <!-- Pager -->
+      <ul class="pager">
+          <li class="previous">
+              <a href="#">&larr; Older</a>
+          </li>
+          <li class="next">
+              <a href="#">Newer &rarr;</a>
+          </li>
+      </ul>
+    </div>
 
     <hr>
 <!-- /.container -->
+  </div>
 </div>
 
 
