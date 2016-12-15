@@ -38,21 +38,16 @@
     
     <hr>
     
-    <div class="row">
-      <!-- Pager -->
-      <ul class="pager">
-          <li class="previous">
-              <a href="#">&larr; Older</a>
-          </li>
-          <li class="next">
-              <a href="#">Newer &rarr;</a>
-          </li>
-      </ul>
+  <div class="row">
+      <!-- will_paginate -->
+    <div class="paginate text-center">  
+      <%= will_paginate @posts %>
     </div>
+  </div>
 
     <hr>
 <!-- /.container -->
-  </div>
+
 </div>
 
 
