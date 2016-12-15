@@ -14,6 +14,7 @@ gem 'simple_form_bootstrap3', '~> 0.3.6'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'devise', '~> 4.2'
 gem 'mail_form', '~> 1.6'
+gem 'disqus', '~> 1.0', '>= 1.0.4'
 gem 'paperclip', '~> 5.1'
 gem 'aws-sdk', '~> 2.6', '>= 2.6.34'
 #Paperclip is now compatible with aws-sdk >= 2.0.0.

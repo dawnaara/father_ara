@@ -37,11 +37,12 @@ h6 {
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 16px; 
     font-family: 'Slabo 27px', serif;
     padding-top: 10px;
     padding-bottom: 10px;
     border: none;
+    background-color: #fff;
 }
 
 .content-wrapper {
@@ -91,7 +92,7 @@ h6 {
 
 .intro-message > h1 {
     margin: 0;
-    text-shadow: 3px 3px 4px rgba(0,0,0,0.8);
+    text-shadow: 3px 3px 4px rgba(0,0,0,1);
     font-size: 4em;
 }
 
@@ -102,7 +103,7 @@ h6 {
 }
 
 .intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 3px 3px 4px rgba(0,0,0,1);
 }
 
 @media(max-width:767px) {
@@ -224,6 +225,8 @@ h6 {
 }
 
 footer {
+    font-size: 16px;
+    font-family: 'Slabo 27px', serif;
     padding: 50px 0;
     background-color: #f8f8f8;
 }
