@@ -16,6 +16,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body,
 html {
@@ -128,16 +139,6 @@ h6 {
 
     .intro-divider {
         width: 100%;
-    }
-}
-
-.services_image {
-    width: 400px;
-    float: left;
-    margin-right: 2em;
-    img {
-        width: 100%;
-        border-radius: 0.35em;
     }
 }
 
