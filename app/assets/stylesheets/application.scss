@@ -268,13 +268,20 @@ h6 {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
-    border: none;
     display: inline-block;
     text-decoration: none;    
 }
 
 .footer_links:hover {
     background-color: #fff;
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  .footer_links_mobile { display: block; }  /* show it on small screens */
+}
+
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+  .footer_links_mobile { display: none; }   /* hide it elsewhere */
 }
 
 p.copyright {

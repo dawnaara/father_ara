@@ -20,8 +20,8 @@
 
           <!-- Blog Entries Column -->
         <div class="col-md-5">
-            <div class="img-responsive"><%= link_to (image_tag post.image.url(:medium)), post %>
-            </div>
+            <img class="img-responsive" <%= link_to (image_tag post.image.url(:medium)), post %>
+            </img>
         </div>
 
         <!-- First Blog Post -->
