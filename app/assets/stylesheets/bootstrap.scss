@@ -84,7 +84,7 @@ sub {
   bottom: -.25em;
 }
 img {
-  border: 0;
+  border-radius: 5px;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -1087,7 +1087,7 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #fff;
+  color: #006200;
   text-decoration: none;
 }
 a:hover,
@@ -1099,6 +1099,13 @@ a:focus {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
+
+li {
+  a {
+    color: #fff;
+  }
+}
+
 figure {
   margin: 0;
 }
@@ -3545,14 +3552,13 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #333;
+  color: #006200;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  color: #262626;
+  color: #009d00;
   text-decoration: none;
-  background-color: #f5f5f5;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
