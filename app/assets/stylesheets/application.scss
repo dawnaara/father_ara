@@ -160,8 +160,8 @@ hr {
 
 .intro-message > h1 {
     margin: 0;
-    text-shadow: 3px 3px 4px rgba(0,0,0,1);
-    font-size: 4em;
+    text-shadow: 2px 2px 3px rgba(0,0,0,.75);
+    font-size: 3em;
 }
 
 .intro-divider {
@@ -170,8 +170,8 @@ hr {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.intro-message > h3 {
-    text-shadow: 3px 3px 4px rgba(0,0,0,1);
+.intro-message > h4 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,.5);
 }
 
 @media(max-width:767px) {
@@ -180,31 +180,7 @@ hr {
     }
 
     .intro-message > h1 {
-        font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
-    }
-}
-
-@media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
-
-    .intro-message > h1 {
-        font-size: 3em;
+        font-size: 1em;
     }
 
     ul.intro-social-buttons > li {
@@ -244,28 +220,6 @@ hr {
     border-top: 3px solid #e7e7e7;
 }
 
-.banner {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 3em;
-}
-
-.banner ul {
-    margin-bottom: 0;
-}
-
-.banner-social-buttons {
-    float: right;
-    margin-top: 0;
-}
-
 .simple_form_button {
     background-color: #006200;
     -moz-border-radius: 4px;
@@ -284,31 +238,6 @@ hr {
     position: relative;
     top: 1px;
 }   
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    .banner h2 {
-        margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-        font-size: 3em;
-    }
-
-    ul.banner-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.banner-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-}
 
 .hidden {
     display: none;
